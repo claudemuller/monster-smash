@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <title>Monster Animation</title>
+    <style>
+        #stage {
+            position: relative;
+            width: 552px;
+            height: 414px;
+        }
+
+        canvas {
+            display: block;
+            position: absolute;
+            width: 128px;
+            height: 128px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <canvas width="128" height="128"></canvas>
+    <div id="stage"></div>
+    <p id="output"></p>
 </body>
 <script src="src/game.js"></script>
 </html>
